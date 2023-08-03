@@ -21,11 +21,13 @@
       const canvas = document.querySelector('.canvas');
       const context = canvas.getContext('2d');
 
+      //fillRect (처음위치 x, 처음위치 y, width, height);
+      //fillStyle = '색상';
       context.fillRect(50, 50, 100, 100);
-      context.fillStyle = 'red';
-      context.fillRect(0, 0, 100, 100);
-      context.clearRect(80, 80, 50, 50);
-      context.strokeRect(150, 150, 100, 100);
+      context.fillStyle = 'red'; //물감을 찍었다.
+      context.fillRect(0, 0, 100, 100); // 여기서 물감이 적용된다.
+      context.clearRect(80, 80, 50, 50); // 지우개
+      context.strokeRect(150, 150, 100, 100); // 선 긋기
     </script>
   </body>
 </html>
